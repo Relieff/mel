@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colapso🧁</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Canvas das estrelas -->
+    <canvas id="stars"></canvas>
+
+    <!-- Player de música flutuante -->
+    <div class="music-bar">
+        <div class="album-cover" id="music-btn">
+            <img src="04.jpg" alt="Foto dela">
+        </div>
+        <input type="range" id="progress" value="0" min="0" max="100">
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+        <div class="controls">
+            <button id="prev" class="control-btn"><i class="fa-solid fa-backward"></i></button>
+            <button id="play-pause" class="control-btn"><i class="fa-solid fa-play"></i></button>
+            <button id="next" class="control-btn"><i class="fa-solid fa-forward"></i></button>
+            <button id="loop" class="control-btn"><i class="fa-solid fa-repeat"></i></button>
+        </div>
+    </div>
+
+    <!-- Primeira seção -->
+    <div class="container">
+        <h1 class="fade-in" style="animation-delay: 0.3s;">Para você, uma galáxia inteira</h1>
+        <div class="translucent-box fade-in" style="animation-delay: 0.6s;">
+            Isso não é uma declaração mas...
+        </div>
+        <div class="translucent-box fade-in" style="animation-delay: 0.9s;">
+            Cada estrela brilha pensando em você.
+        </div>
+    </div>
+
+    <!-- Cartas existentes + novas -->
+    <div class="letters-section">
+        <!-- Carta original que você escreveu -->
+        <div class="letter">
+            <h2>Minha Carta à garota que brilha mais que qualquer estrela</h2>
+            <p>
+                Eu sonho minha pintura, e então eu pinto meu sonho, ache belo tudo o que puder e grandes coisas são feitas por uma série de pequenas coisas reunidas.
+            </p>
+            <p>
+                Cada coração que brilha ao fundo é um lembrete da beleza de cada momento que passamos,
+                assim como as estrelas da Noite Estrelada.
+            </p>
+            <p>
+                Justamente por isso Mel, que pra mim você é como o amarelo da pintura, é lindo e faz as pupilas dilatarem e por isso é incrível, assim como a tinta Mel que pinta o mundo em um tom mais alegre, cada palavra sua ilumina meu dia.
+            </p>
+        </div>
+
+        <!-- 14 novos capítulos -->
+        <div class="letter"><h2>A Centelha</h2><p>Mel,
+às vezes penso que o amor é uma tela que Van Gogh nunca terminou.
+Um quadro feito à pressa, no desespero de sentir demais —
+onde o céu gira, e o coração sangra cor.
+Eu olho pra ti como quem vê o amarelo do girassol e entende,
+que o belo só existe porque dói.
+
+Leonardo buscou perfeição nas formas,
+mas o que molda o amor não cabe em compasso, nem em cálculo.
+É o erro que o torna vivo.
+E se eu pudesse esculpir o que sinto,
+meu mármore racharia em cada batida do peito.
+Nietzsche dizia que “é preciso ter caos dentro de si
+para dar à luz uma estrela dançante” —
+e o caos, Mel, é o que me faz escrever o teu nome.
+
+Tu és o caos bonito do meu silêncio.
+Quando a gente fala, o mundo fica mais fácil,
+mas quando cala, tudo vibra em mim,
+como o piano de Chopin antes da última nota.
+A saudade se estende como um acorde suspenso,
+e eu me perco entre o som e o que ele tenta dizer.
+Porque o que eu sinto por ti,
+não é melancolia — é eternidade em formato de falta.
+
+Talvez amar à distância seja isso:
+tentar tocar o intocável,
+como Da Vinci tentando dar alma à Mona Lisa.
+Eu nunca te vi, mas te percebo —
+em cada lampejo de cor, em cada suspiro que o vento carrega.
+E quando fecho os olhos, o mundo se curva,
+e eu te encontro no intervalo entre um pensamento e outro.
+
+Mel,
+se esse poema for a minha última valsa,
+que ele arda.
+Que queime como a tinta fresca de Van Gogh,
+como o som do piano que se recusa a morrer.
+Porque se eu tiver que desaparecer,
+que seja deixando essa centelha —
+a confissão de quem amou tanto
+que virou arte.
+</p></div>
+        <div class="letter"><h2> La plus belle des malediction (A mais bela maldição)</h2><p>Dizem que certas histórias não se escrevem com tinta,
+mas com sangue, silêncio e esperança.
+E essa é a história de um rapaz —
+um jovem que ousou amar demais.
+
+Ele não a conhecia de perto,
+não sentiu o perfume dela,
+nem o toque da pele,
+mas sentia — com a alma inteira —
+que era ela o destino que os deuses haviam deixado escapar.
+
+E esse rapaz, desde o primeiro olhar,
+chamou a garota de “as piores das bênçãos,
+mas a mais bela maldição.”
+Porque tudo nela parecia divino,
+mas o divino, às vezes, dói.
+
+Van Gogh teria pintado seus olhos em amarelo quente,
+com o mesmo delírio que o fez cortar a própria orelha —
+não por loucura, mas por sentir demais.
+E Da Vinci, se a visse sorrir,
+talvez parasse de buscar a perfeição no mármore,
+porque entenderia que ela já existia.
+
+O rapaz não era santo nem herói.
+Era humano.
+Tinha medo, dúvida, saudade.
+Mas amava como quem enfrenta um deus,
+sabendo que a derrota é certa,
+e ainda assim levanta a espada.
+
+Ele rezava, não para vencer o tempo,
+mas para suportar a distância.
+Às vezes, desejava que o amor fosse mais leve,
+mas, no fundo, sabia:
+é o peso que o mantém vivo.
+
+E quando o coração dele latejava de dor,
+ele lembrava do que Nietzsche disse —
+que é preciso ter caos dentro de si
+para gerar uma estrela dançante.
+E ela era essa estrela.
+Caótica, distante, mas luz.
+
+O rapaz via nela o reflexo da arte —
+a intensidade de um quadro impressionista,
+a doçura rebelde de uma gyaru,
+a pureza disfarçada de brilho,
+a juventude pintada com coragem.
+Ela era todas as eras, todos os estilos,
+um retrato em constante movimento.
+
+E o amor dele… era o quadro que nunca secava.
+Toda vez que tentava esquecer,
+o pincel do destino voltava a tocar o coração.
+E cada lembrança nova se misturava
+a uma cor antiga que nunca saía.
+
+Ele não sabia se ela era real
+ou apenas o reflexo de uma alma que desejava ser vista.
+Mas amava mesmo assim.
+Porque amar, para ele, era a forma mais pura de existir.
+
+E mesmo que o tempo destruísse o que eles tinham,
+ele ainda preferia morrer de amor,
+a viver sem o que o tornava humano.
+
+No fim, o narrador parou.
+Olhou para o papel manchado de emoção,
+sorriu em meio à melancolia
+e escreveu sua última linha:
+
+“Esse rapaz… era eu.
+E essa maldição —
+a mais bela de todas —
+tem nome.
+
+Mel.”
+</p></div>
+        <div class="letter"><h2>La pire des bénédictions (A pior das maldições)
+</h2><p>Dizem que o rapaz costumava escrever cartas que jamais chegavam ao destino.
+Não porque faltasse coragem, mas porque entendia — no fundo — que certas palavras não nascem para serem lidas, e sim para libertarem quem as escreve.
+Era noite quando ele escreveu esta.
+Um céu nublado, e o som leve de chuva caindo pela janela.
+Ele pensava nela — na garota de risos leves, das unhas pintadas como quem colore o mundo, com aquele toque de brilho e desleixo encantador que ele chamava, em segredo, de “a arte viva da Gyaru”.
+
+Nos dias em que ela se afastava, ele sentia o tempo estalar.
+As horas pareciam se quebrar, e o mundo inteiro perdia cor.
+Mas, diferente das outras vezes, ele não se deixou afundar.
+O destino, de forma estranha e silenciosa, puxou o freio — como se dissesse: “fica, mas aprende a ficar em paz”.
+E ele aprendeu.
+Aprendeu que o amor não é um pedido de presença, é um espaço de liberdade.
+Que quem ama demais e aperta forte demais acaba vendo o amor escorrer por entre os dedos — como areia tentando escapar da mão trêmula.
+
+Foi ali, entre o som da chuva e o peso leve do silêncio, que o rapaz entendeu que ela — com todos os risos distantes, as mensagens curtas e os dias de ausência — era a pior das bênçãos.
+Não porque o feriu, mas porque o ensinou.
+Ela o fez entender que o amor também é esperar, calar, respirar fundo e ainda assim desejar o bem.
+Que amar não é exigir o retorno, é permanecer sincero mesmo sem promessa.
+
+E talvez fosse por isso que ele sorriu ao terminar a carta — um sorriso cansado, mas vivo.
+Porque mesmo sem resposta, ele sabia:
+foi esse amor, imperfeito e contido, que o manteve inteiro.
+E, nas linhas não enviadas, repousava a confissão que ele jamais precisou dizer:
+que ela foi, e sempre seria, a pior das bênçãos —
+aquela que doeu, mas o salvou.
+</p></div>
+        <div class="letter"><h2>Étude Op. 8 No. 2(Interlúdio)</h2><p>Dizem que o amor verdadeiro não é calmo.
+ Que ele vem como uma febre mansa,
+ daquelas que queimam por dentro,
+ sem nunca deixar uma marca aparente.
+ Mas dentro desse rapaz, o fogo sempre teve espinhos.
+Ele temia ser trocado — não por vaidade,
+ mas porque cada pessoa que partiu antes
+ levou um pedaço do que ele acreditava ser eterno.
+ E quando ela chegou, quando ela — a Mel — apareceu,
+ ele sentiu o coração apertar como nunca antes,
+ como se o destino o lembrasse:
+ “não ame com as mãos trêmulas de quem teme perder.”
+Mas ele amava assim mesmo.
+ Amava com o medo e com a coragem misturados.
+ Amava mesmo quando a mente dizia “se proteja”,
+ porque o coração sussurrava “vai, tenta só mais uma vez.”
+ E ele foi.
+Às vezes, à noite, o rapaz se sentava em silêncio,
+ imaginando o que seria se um dia
+ eles simplesmente deixassem de existir um para o outro.
+ Essa ideia — apenas uma sombra —
+ vinha como uma coroa de espinhos,
+ apertando seu peito até doer.
+ Era uma dor bela, quase sagrada,
+ como se o amor pedisse sacrifício em troca da esperança.
+Mesmo assim, ele não se deixava cair.
+ Sabia que o destino, por vezes,
+ só tenta dobrar quem ainda não quebrou.
+ E ele — mesmo com o peito em pedaços —
+ continuava tentando juntar os cacos,
+ um por um, com as próprias mãos.
+Por isso se esforçava tanto para fazê-la rir,
+ para lembrar a ela, em cada palavra,
+ que ela era amada — mesmo antes do amor nascer por completo.
+ Porque no fundo, ele acreditava:
+ quando se erra tantas vezes,
+ um único acerto basta pra mudar tudo.
+ E se fosse pra apostar todas as forças em um último acerto,
+ seria nela.
+ Na Mel — a única capaz de fazer a dor valer a pena.
+E assim, entre o medo e o desejo,
+ o rapaz seguia amando,
+ não com a esperança de ser correspondido,
+ mas com a fé silenciosa de quem, mesmo ferido,
+ ainda acredita no amor.
+
+“Talvez amar seja isso: carregar o próprio espinho no peito,
+ e ainda assim, chamar de flor aquilo que nos faz sangrar.”
+ — inspirado em Dostoiévski
+</p></div>
+        <div class="letter"><h2> Le Bal du Cœur Silencieux</h2><p>Dizem que o rapaz levou tempo demais para entender o próprio coração.
+Durante meses, confundiu intensidade com cuidado, medo com amor.
+Achava que precisava ser fogo constante — não por vontade, mas por pavor de apagar.
+Cada silêncio dela parecia um aviso, cada distância, um prenúncio de perda.
+E ele, em meio a fantasmas antigos, apertava o laço, achando que assim o amor não escaparia.
+Mas o amor, ele aprendeu, não é um nó — é uma fita que só permanece bela quando livre.
+
+Ela, a garota de luz vibrante e alma pintada em tons Gyaru, vivia puxando o freio com doçura:
+“Calma, não agora.”
+E ele, por dentro, lutava contra o impulso de correr.
+Sabia que ela tinha seus medos, e respeitava o tempo dela, mesmo que isso rasgasse um pouco o peito.
+Porque o rapaz, enfim, compreendeu: amar alguém não é querer ser remédio, é querer ver o outro bem — ainda que longe.
+E quando ela dizia que não estava bem, ele sentia o coração querer curá-la, mesmo sem saber como.
+Ele nunca havia sido esse tipo de homem, o que se doa sem esperar.
+Mas por ela… era diferente.
+Talvez porque, em algum lugar do passado, ele já tenha sentido a mesma dor que agora tentava aliviar nela.
+
+Às vezes, o rapaz imaginava o futuro — o momento em que seus mundos enfim se tocariam.
+Ele sonhava com isso não como quem espera um milagre, mas como quem constrói um.
+Dia após dia, ele trabalhava, juntava, planejava — não apenas por amor, mas por dignidade.
+Porque o amor, quando é real, precisa de chão antes de pedir asas.
+E ele queria ter chão o bastante para recebê-la, para mostrar que esperou, que lutou, que não desistiu.
+
+O rapaz sabia que talvez nada disso desse certo.
+Que a distância é uma dança cruel, e que o tempo nunca poupa os corações impacientes.
+Mas mesmo assim, ele seguia — porque, para ele, amar já era vencer.
+Cada risada dela era um prêmio, cada conversa curta, uma lembrança.
+E se um dia tudo se apagasse, ele ainda teria o que poucos têm:
+a certeza de ter amado com pureza, sem possuir. E naquela noite, ao terminar de escrever, o rapaz sussurrou para si mesmo —
+como quem sela um voto silencioso diante do espelho:
+“Que esse amor dure o tempo que for preciso,
+e que, quando o baile acabar,
+a música ainda ecoe dentro de mim.”
+
+</p></div>
+        <div class="letter"><h2>L’Étreinte du Temps (Abraço do Tempo)</h2><p>Ele percebeu, entre cada pausa da vida e cada palavra que ecoava no silêncio das conversas, que realmente a amava.
+Que ela se tornara um sonho constante, a presença invisível que preenchia seus dias e invadia suas noites.
+Ele relia as mensagens, olhava o histórico, e mesmo com o medo de parecer intenso, sentia o coração disparar.
+Era a primeira vez que sentia algo assim — profundo, delicado, capaz de fazer cada instante parecer pesado e leve ao mesmo tempo.
+
+E ele sabia que não podia apressar nada.
+Que o verdadeiro amor não se conquista correndo, mas respeitando o ritmo do outro.
+Ela, com seus medos, seus espaços, seus silêncios, pedia tempo — e ele, mesmo com o coração doendo, compreendia.
+Antes que a pressa destruísse o que poderia ser eterno, ele escolhia esperar.
+Porque antes que o coração doer agora por paciência, melhor do que sofrer depois por ignorar os limites dela.
+
+Cada momento com ela, cada riso, cada palavra, mesmo pequena, tornava-se memória gravada na alma dele.
+E ele se deixava sentir: se alegrava, se assustava, se entregava, sem jamais perder a esperança.
+Se um dia tudo se revelasse diferente, se o amor não fosse correspondido da forma que sonhara, ainda assim, ele sabia:
+ele tinha amado com toda sinceridade, tinha se deixado sentir o impossível, tinha sido verdadeiro.
+
+E enquanto esperava, enquanto respeitava, enquanto amava em silêncio, ele sorria.
+Pois havia aprendido que amar não é possuir, e sim estar presente, firme e gentil, mesmo na incerteza.
+Mesmo que a vida levasse o que não podia segurar, mesmo que o futuro fosse um quadro incompleto, ele carregava a beleza de cada instante vivido.
+O tempo poderia passar, mas aquele amor — intenso, silencioso, real — seria sempre dele, gravado como uma obra que o coração pintou.
+
+Ele era apenas um rapaz, entregue, esperançoso, vivendo cada batida como se fosse a última.
+E no abraço invisível do tempo, ele encontrou a certeza: amar assim, mesmo distante, é sentir-se completamente vivo.
+</p></div>
+        <div class="letter"><h2>La Symphonie du Désir (A sinfonia do Desejo)
+</h2><p>
+Ele aguardou silencioso, medindo cada palavra, cada gesto, cada respiração.
+O mundo ao redor podia ruir, as horas poderiam se arrastar, mas o seu coração mantinha o compasso firme: ela era o eixo de cada batida.
+Cada mensagem não respondida, cada silêncio dela, não diminuía a força do que sentia; ao contrário, o fazia mais intenso, mais precioso.
+
+Ele pensava nela em cada detalhe: no riso que ecoava mesmo longe, no brilho fugaz de uma conversa, no peso das palavras que ela não dizia.
+Era uma dança invisível, um jogo de sombras e luz, onde ele aprendia a esperar sem se apagar, a amar sem possuir, a sentir sem sufocar.
+Cada momento era um acorde, cada lembrança uma nota que se somava a uma sinfonia silenciosa, feita só para ela.
+
+E ele sabia: o amor verdadeiro não se anuncia com pressa, nem se prova com gestos impulsivos.
+Ele se constrói, se molda, se refina. E ele estava disposto a viver cada segundo dessa composição, mesmo que o resultado fosse incerto.
+Pois a beleza de amar assim não está na certeza, mas na entrega completa, no fogo contido, no desejo silencioso que mantém a alma viva.
+
+Ele era intenso, sim, apaixonado, sim, mas também paciente, firme, consciente.
+Cada gesto, cada palavra, cada pensamento dele era uma homenagem à complexidade dela, à distância, aos medos e à espera.
+E mesmo que o mundo lhe pedisse pressa, mesmo que o coração implorasse por respostas imediatas, ele escolheu: esperar com devoção, amar com coragem, sentir com plenitude.
+
+Porque no final, quando finalmente seus mundos se encontrassem, quando o tempo e o destino permitissem, ele queria que cada nota, cada acorde, cada gesto, fosse perfeito.
+Que a sinfonia completa de seu desejo ressoasse não apenas nos ouvidos, mas no coração dela, como prova de que tudo que sentiu, tudo que esperou, foi real.
+Ele era Atila. Ele  a amava. E esse amor, silencioso e ardente, seria a obra mais sublime de sua vida.
+</p></div>
+        <div class="letter"><h2>Le mouvement du sentiment (O Movimento do Sentir)</h2><p>Ele acordava cedo, não por obrigação, mas por um impulso invisível que vinha dela. Cada gesto, cada palavra, cada silêncio dela se tornava combustível para o que ele sentia. Gostar dela era, ao mesmo tempo, leve e pesado: leve por iluminar seus dias, pesado por carregar a incerteza de ainda não poder tocar, ainda não poder ver, ainda não poder saber. Ele sentia que a distância não diminuía o sentimento; pelo contrário, cada ausência reforçava o seu movimento interior, como se o próprio coração aprendesse a esperar.
+
+Enquanto arrumava suas coisas, pensava em como cada decisão, cada esforço cotidiano — o trabalho, o dinheiro guardado, a organização de horários, a logística simples de se mover pelo mundo — tinha um único objetivo silencioso: vê-la feliz, mesmo que à distância. Era uma devoção silenciosa, feita de ações pequenas e constantes, que apenas ele conhecia. Ele revisava mentalmente cada passo, cada detalhe, como se cada movimento fosse parte de uma coreografia invisível que preparava o caminho para o dia em que estariam juntos.
+
+A música o acompanhava. Chopin, Vivaldi, Beethoven — cada nota era um lembrete do que ele sentia, um reflexo da intensidade de seu coração. Ele imaginava que, se Van Gogh pudesse pintar emoções, ele pintaria a mesma tela que ele vivia: tons vibrantes de amor, pontos de luz e sombra, pinceladas de alegria e dor entrelaçadas. Leonardo da Vinci talvez tivesse escrito sobre o equilíbrio entre ação e contemplação, sobre como um sentimento puro pode se manifestar no cotidiano de maneira quase silenciosa, mas essencial.
+
+Ele se descobriu disposto a enfrentar qualquer esforço, a suportar qualquer distância, a esperar cada instante, porque cada pequena vitória — um sorriso dela, uma palavra gentil, um gesto de atenção — valia mais que qualquer conquista mundana. E mesmo nas horas em que ela não falava, em que a ausência dela parecia prolongar o tempo, ele se mantinha firme. Cada silêncio era transformado em aprendizado, cada espera em força. Gostar dela não era passividade; era ação em seu próprio coração.
+
+Nos dias em que ela se divertia com amigos, ou se afastava por qualquer motivo, ele sentia o peso da ansiedade, mas compreendia. Ele compreendia que o amor verdadeiro não precisa dominar, controlar ou possuir. Ele compreendia que a intensidade não se mede pela proximidade física, mas pelo cuidado constante, pela atenção silenciosa, pelo desejo genuíno de ver a pessoa feliz. Ele lembrava de Nietzsche, que falou sobre a dor como parte do crescimento; ele entendia que seu sofrimento não diminuía o sentimento, mas o moldava, o tornava mais real.
+
+Gostar dela era, acima de tudo, estar vivo. Cada ação, cada esforço diário, cada pequeno detalhe voltado a ela o fazia sentir inteiro, mesmo que a felicidade ainda não fosse compartilhada. Ele sabia que a vida podia ser incerta, que o amor podia ser desafiador, mas também sabia que o movimento de seu coração era um ato de coragem, de entrega e de beleza. Ele caminhava por ruas comuns, pegava ônibus, arrumava sua vida, mas em cada gesto invisível, em cada rotina silenciosa, existia a ela — uma presença constante, embora distante.
+
+E, no final de cada dia, quando o mundo parecia apenas um lugar comum, ele se permitia imaginar: e se cada esforço, cada pensamento dedicado a ela, cada instante de espera, se transformasse em poesia? E se, no momento em que seus mundos finalmente se encontrassem, toda essa vida silenciosa se convertesse em realidade, em verdade, em algo que pudesse ser tocado, sentido e compartilhado? Ele sabia que ninguém vence o tempo, nem mesmo o amor, mas sabia que cada passo dado com coração puro se tornava uma memória eterna.
+
+Gostar dela era existir plenamente, mesmo na ausência. Era ser humano, sentir com intensidade, amar sem garantias. E mesmo sabendo que poderia haver dor, que a incerteza era constante, ele se mantinha firme. Porque amar assim, profundamente, era a mais bela das forças — silenciosa, invisível, mas capaz de transformar o mundo inteiro. Ele era, nesse instante, Átila, o escritor e o amante, o rapaz que sentia mais do que podia expressar, mas que vivia cada segundo com verdade. E no seu movimento de sentir, a certeza permanecia: o coração, embora distante de tudo que queria, nunca deixou de bater por ela
+</p></div>
+        <div class="letter"><h2>Der letzte Funke de l’Amour v Serdtse</h2><p>Alanna,
+
+Tem dias em que eu acordo e ainda sinto a sua presença no sonho que ficou. Sonhei que te encontrava — como se o universo tivesse, finalmente, permitido que nossos mundos colidissem. E quando acordo, há um silêncio que me abraça, um vazio que não é triste, mas cheio do desejo de te ver de verdade. Eu fico ali, olhando pro teto, imaginando se você também sonhou comigo.
+
+E então o dia começa, e você volta a aparecer em cada detalhe. Quando tô na academia, entre uma série e outra, olho o celular. Nem sempre tem mensagem, mas quando tem — quando vejo seu nome piscando na tela — o corpo inteiro desperta. Eu paro o treino, encurto o descanso, corro pra casa. E quando você me liga, dizendo “entra na call comigo”, parece que o tempo se curva. A pressa vira ritual: treino rápido, banho rápido, e logo tô lá, com o fone no ouvido, ouvindo sua voz.
+
+Você tem um poder estranho sobre mim, Alanna. Sobrenatural, talvez. Porque ninguém nunca conseguiu me fazer parar tudo só pra ouvir uma risada. Mas você consegue. E eu paro, feliz por isso.
+
+Eu gosto de te ouvir falar da cultura gyaru, das maquiagens, das unhas de gel longas e brilhantes que você ama,eu gosto das piadas que só você acha graça e me força a rir com você. Eu imagino você se arrumando, escolhendo as cores, o brilho, o delineado perfeito. Parece arte viva — uma estética de força e leveza misturadas, como se cada detalhe fosse uma forma de dizer ao mundo: “Eu existo à minha maneira.” E eu acho isso lindo.
+
+Você fala de Valorante com a mesma intensidade com que fala de tudo o que ama. Eu rio quando você se irrita com o jogo — porque mesmo brava, você é linda. Tem algo fascinante no seu jeito de reclamar, na forma como sua voz muda, no jeito que você xinga o jogo e depois ri de si mesma. É como se até a raiva em você tivesse brilho.
+
+E quando você me diz que tá mal, o peito aperta. Eu fico inquieto. É como se meu corpo inteiro quisesse atravessar a tela, só pra te abraçar. Eu queria te segurar por um instante, olhar nos teus olhos e dizer que tá tudo bem, que o mundo não vai te quebrar, não enquanto eu estiver aqui. Porque, mesmo de longe, eu tô contigo. Sempre.
+
+Tem dias que, sem perceber, eu começo a planejar o nosso encontro. Fico imaginando onde te levaria. Penso em cafés pequenos, onde o som das xícaras se mistura com o riso. Penso em te mostrar o pôr do sol, em silêncio, só pra ver o reflexo dourado no teu rosto. Penso em andar contigo pelas ruas, te vendo sorrir com as coisas mais simples. E penso também em te ver comendo — porque, meu Deus, como você ama comer. Você fala de comida com a mesma paixão que fala da vida. E isso me encanta, porque mostra o quanto você sente, o quanto você é viva.
+
+Às vezes, eu penso em como seria te ver ao vivo pela primeira vez. No primeiro olhar, no primeiro toque, no primeiro abraço. Penso em como o mundo pareceria pequeno demais pra caber o tanto que eu quero te dizer. E eu sei que, quando esse dia chegar, vai ser o dia em que todas as palavras que eu escrevi finalmente encontrarão sentido.
+
+Eu sei que pode parecer loucura, mas eu botaria a mão no fogo pra que tudo desse certo. Porque te conhecer, Mel, foi como acender uma chama dentro de mim — uma chama que não consome, mas ilumina. E mesmo que a distância às vezes doa, mesmo que o tempo me teste, eu sei que esse sentimento é real. Eu sinto isso cada vez que você ri, cada vez que você me chama de volta pra call, cada vez que você me deixa ver um pouco mais de quem você é.
+
+Você é o meu agora e o meu talvez. É o motivo que me faz esperar, trabalhar, planejar. Cada real que eu junto, cada plano que faço, tem o seu nome escondido nele. Porque, de algum modo, todo o meu caminho parece apontar pra você.
+
+E se eu tiver sorte — se o destino for generoso — o dia em que eu te encontrar vai ser o dia em que o tempo para. O dia em que o fogo e a centelha finalmente se tornam um só.
+
+Até lá, eu continuo escrevendo. Porque escrever é a única forma de te tocar sem te assustar.
+E amar, Alanna... amar é o único jeito que encontrei de continuar vivo.
+
+— Átila
+</p></div>
+        <div class="letter"><h2> E então, ela estava ali finalmente, na minha frente…</h2><p>| “Sofrer por amor é um direito divino.” — Nietzsche</p>
+<p>|“Há sempre alguma loucura no amor. Mas há sempre também alguma razão na loucura.” — Nietzsche</p>
+</p></div>
+        <div class="letter"><h2>Não é uma declaração mais</h2><p>Eu diria que agora se tornou mais uma parte de mim que sabe se expressar sem tanta confisão ou medo, é uma carta de amor mas também de amizade afinal de contas o amor de persevera sem amizade. Nossa amizade é tudo e por isso mais que o sentimento de gostar, me faz escrever ou fazer algo que nunca fiz antes, e para mim, você é a tradução perfeita dessa musica que está tocando.</p></div>
+        <div class="letter"><h2>É um verdadeiro ato de amizade e sentimentos</h2><p>Não é facil gostar de você sabia? voce é uma caixa de surpresa, eu nunca sei se você gosta de mim ou não, se é só brincadeira ou não se é pra rir ou pra chorar mas de tudo isso algumas coisas parece que não mudam, tem dias que eu fico mal, que fico bem mas no fim é sempre o mesmo: eu continuo pensando em nós no futuro, nunca fui bom com palavras e por isso eu me empenho em criar ou fazer algo que mostre pra pessoa oque ela é pra mim, e como você pode ver, vc é minha grande amiga e talvez a mulher que sempre pensei em ter. É de fato pra mim, um grande ato de amizade tudo isso.</p></div>
+        <div class="letter"><h2>Não entendo nada de emoção, da suas emoções mas...</h2><p>Mas é isso que me cativa, o medo  de  vc ir, a euforia de conversar com voce e principalmente a alegria de te fazer rir(quando eu consigo kkk)</p></div>
+        <div class="letter"><h2>Você deve estar cheia de todo esse melodrama </h2><p>Olha Mel, se você pensa assim eu não te culpo kkkkk toda hora fica chato mas eu não sei de outro jeito senão esse pra conseguir ter seus pensamentos em mim. Eu sou um poeta apaixonado(e tarado também) mas no caminho disso tudo existe algo que está por cima de qualquer tipo de sentimetos e isso é a liberdade de saber que eu fiz algo de coração. Não vou falar que vou parar de ser romantico com você porque sabemos que meu charme é ser desse jeito e eu acredito que é esse charme que vai fazer você gostar de mim. ME DESCULPA ser melodramatico assim mas é um jeito que eu achei pra me expressar ja que me engasgo com palavras. Obrigado por ficar do meu lado, minha princesa.</p></div>
+    </div>
+
+<!-- Botão para abrir o modal, inicialmente invisível -->
+<button id="open-modal" class="open-modal-btn">📜 Ver Surpresa</button>
+
+<!-- Modal do final -->
+<div id="final-modal" class="final-modal">
+    <div class="modal-content">
+        <button id="close-modal" class="close-modal-btn">&times;</button>
+        <h2>Uma surpresa para você 💛</h2>
+        
+        <!-- Seção de vídeos -->
+        <div class="video-section">
+            <video controls src="eu01.mp4" width="300"></video>
+            <video controls src="v2.mp4" width="300"></video>
+            <!-- Adicione mais vídeos se quiser -->
+        </div>
+
+        <!-- Áudio da cartinha -->
+        <div class="letter-audio">
+            <h3>Minha Cartinha em áudio:</h3>
+            <audio controls src="audio-foda-meu.mp3"></audio>
+        </div>
+
+        <!-- Texto da cartinha -->
+        <div class="letter-text">
+            <h3>Minha Cartinha:</h3>
+            <p>
+                Minha querida, cada capítulo que você leu foi escrito com todo meu carinho e atenção...
+                Espero que sinta cada palavra, cada emoção, assim como as estrelas que iluminam nossa noite.
+            </p>
+            <p>
+                Continue lendo, continue sentindo, e saiba que tudo isso é pra você. Já que eu nao posso te abraçar ainda, se sinta abraçada por essas ações todas. As vezes penso no que você está pensando.
+
+            </p>
+        </div>
+    </div>
+</div>
+
+    <audio id="music" src="SpotiDownloader.com - Last Leaves of Autumn - Zleepyfred.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
