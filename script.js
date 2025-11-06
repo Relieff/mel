@@ -200,7 +200,7 @@ document.querySelector('.go-next-section').addEventListener('click', () => {
             requestAnimationFrame(scrollStep);
         } else {
             // Depois de chegar na parte2, aplica degrade horizontal
-            parte2.style.background = "linear-gradient(to right, #ff69b4, #000)";
+            //parte2.style.background = "linear-gradient(to right, #ff69b4, #000)";
         }
     }
 
@@ -229,4 +229,5 @@ Star.prototype.draw = function() {
     // usa currentAlpha em vez de alpha
     ctx.fillStyle = `rgba(255,255,150,${this.currentAlpha || this.alpha})`;
     ctx.fill();
+
 }
