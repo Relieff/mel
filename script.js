@@ -129,3 +129,109 @@ finalModal.addEventListener('click', (e) => {
         finalModal.style.display = 'none';
     }
 });
+
+// Ao clicar na seta, rola suavemente até a parte 2
+document.querySelector('.go-next-section').addEventListener('click', () => {
+    document.getElementById('parte2').scrollIntoView({ behavior: 'smooth' });
+});
+
+let isTransitionAllowed = false;
+
+window.addEventListener('scroll', () => {
+    const parte1Height = document.getElementById('parte1').offsetHeight;
+    
+    if (!isTransitionAllowed && window.scrollY > parte1Height - window.innerHeight) {
+        window.scrollTo(0, parte1Height - window.innerHeight);
+    }
+});
+
+const goNextBtn = document.querySelector('.go-next-section');
+goNextBtn.addEventListener('click', () => {
+    isTransitionAllowed = true;
+    document.getElementById('parte2').scrollIntoView({ behavior: 'smooth' });
+});
+
+const parte2 = document.getElementById('parte2');
+
+parte2.addEventListener('mouseenter', () => {
+    document.body.style.overflowY = 'hidden'; // bloqueia scroll vertical
+});
+
+parte2.addEventListener('mouseleave', () => {
+    document.body.style.overflowY = 'auto'; // libera scroll novamente se quiser
+});
+
+document.querySelector('.go-next-section').addEventListener('click', () => {
+    const parte2Top = parte2.offsetTop;
+
+    let start = window.scrollY;
+    let distance = parte2Top - start;
+    let duration = 1500; // 1.5s, aumenta para mais lento
+    let startTime = null;
+
+    function scrollStep(timestamp) {
+        if (!startTime) startTime = timestamp;
+        let progress = timestamp - startTime;
+        let percent = Math.min(progress / duration, 1);
+        window.scrollTo(0, start + distance * percent);
+        if (percent < 1) requestAnimationFrame(scrollStep);
+    }
+
+    requestAnimationFrame(scrollStep);
+});
+
+document.querySelector('.go-next-section').addEventListener('click', () => {
+    const parte2Top = parte2.offsetTop;
+    const start = window.scrollY;
+    const distance = parte2Top - start;
+    const duration = 1500; // duração da rolagem em ms
+    let startTime = null;
+
+    function scrollStep(timestamp) {
+        if (!startTime) startTime = timestamp;
+        const progress = timestamp - startTime;
+        const percent = Math.min(progress / duration, 1);
+
+        // Scroll suave
+        window.scrollTo(0, start + distance * percent);
+
+        // Background vertical (preto -> rosa)
+        const black = [0,0,0];
+        const pink = [255,105,180]; // #ff69b4
+        const color = black.map((c,i) => Math.round(c + (pink[i] - c) * percent));
+        document.body.style.background = `rgb(${color[0]},${color[1]},${color[2]})`;
+
+        if (percent < 1) {
+            requestAnimationFrame(scrollStep);
+        } else {
+            // Depois de chegar na parte2, aplica degrade horizontal
+            parte2.style.background = "linear-gradient(to right, #ff69b4, #000)";
+        }
+    }
+
+    requestAnimationFrame(scrollStep);
+});
+
+window.addEventListener('scroll', () => {
+    const parte2Top = parte2.offsetTop;
+    const scrollY = window.scrollY + window.innerHeight / 2; // centro da tela
+
+    stars.forEach(star => {
+        if(scrollY >= parte2Top){
+            // Quando estiver na segunda parte, aumenta o brilho
+            star.currentAlpha = Math.min(star.alpha * 1.5, 1);
+        } else {
+            // Volta ao brilho normal
+            star.currentAlpha = star.alpha;
+        }
+    });
+});
+
+// No draw da estrela, substitua:
+Star.prototype.draw = function() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, 0, Math.PI*2);
+    // usa currentAlpha em vez de alpha
+    ctx.fillStyle = `rgba(255,255,150,${this.currentAlpha || this.alpha})`;
+    ctx.fill();
+}

@@ -1,6 +1,6 @@
 /* Reset e fundo */
 * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif; }
-body { min-height:100vh; overflow-x:hidden; background: linear-gradient(to bottom,#1a237e,#0d0d2b,#000000); color:white; position:relative; }
+body { min-height:100%; overflow-x:hidden; background: linear-gradient(to bottom,#1a237e,#0d0d2b,#000000); color:white; position:relative; }
 
 /* Canvas das estrelas */
 #stars { position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:0; }
@@ -120,4 +120,72 @@ h1{ font-size:3em; margin-bottom:20px; text-shadow:0 0 15px rgba(255,255,200,0.5
     font-size: 1.2em;
     margin-bottom: 15px;
     color: #222;
+}
+
+/* seta para próxima seção */
+.go-next-section {
+    text-align:center;
+    margin-top:200px;
+    font-size:1.3em;
+    animation: pulse 2s infinite;
+}
+.go-next-section i {
+    font-size:2em;
+    display:block;
+    margin-top:5px;
+}
+@keyframes pulse {
+    0% { opacity:0.4; transform:translateY(0); }
+    50% { opacity:1; transform:translateY(5px); }
+    100% { opacity:0.4; transform:translateY(0); }
+}
+
+/* Parte 2 - scroll horizontal */
+#parte2 {
+    height: 100%; /* deixa crescer conforme o conteúdo */
+    width: 100%;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, #ff69b4, #000); /* rosa/preto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    transition: background 1s ease; /* suave ao mudar */
+}
+
+.horizontal-wrapper {
+    height:100%;
+    display:flex;
+}
+
+.slide {
+    min-width: 100vw;
+    height: 100vh; /* garante altura total da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background: rgba(255,255,255,0.0); /* translucidez */
+    backdrop-filter: blur(10px);       /* blur do fundo */
+    border-right: 1px solid rgba(255,255,255,0.15);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    box-sizing: border-box; /* evita que padding quebre o tamanho */
+}
+.slide h2 {
+    font-size:3em;
+    margin-bottom:10px;
+}
+.slide p {
+    max-width:600px;
+    font-size:1.4em;
+    opacity:0.9;
+}
+
+/* Efeito de profundidade enquanto rola */
+#parte2:active .slide,
+#parte2:focus-within .slide {
+    transform:scale(0.97);
+    opacity:0.95;
 }
