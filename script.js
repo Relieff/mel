@@ -151,11 +151,6 @@ goNextBtn.addEventListener('click', () => {
     document.getElementById('parte2').scrollIntoView({ behavior: 'smooth' });
 });
 
-const parte2 = document.getElementById('parte2');
-
-parte2.addEventListener('mouseenter', () => {
-    document.body.style.overflowY = 'hidden'; // bloqueia scroll vertical
-});
 
 parte2.addEventListener('mouseleave', () => {
     document.body.style.overflowY = 'auto'; // libera scroll novamente se quiser
